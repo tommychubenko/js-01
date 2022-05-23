@@ -1,39 +1,54 @@
 
-class Storage {
-  constructor(items) {     
-    this.items = items
-
-  }
- 
-  getItems(){
-  return this.items
-  }
-
-  addItem(newItem) {
-    this.items.push(newItem);   
-  }
-
-  removeItem(itemToRemove) {
-    const itemToRemoveIndex = this.items.indexOf(itemToRemove);
-    this.items.splice(itemToRemoveIndex, 1);
-
-
-   
-  }
-
-};
-
-
 
 
 // Change code above this line
-const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
-console.log(storage);
-console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
-storage.addItem("Droid");
-console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
-storage.removeItem("Prolonger");
-console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+const builder = new StringBuilder(".");
+console.log(builder.getValue()); // "."
+builder.padStart("^");
+console.log(builder.getValue()); // "^."
+builder.padEnd("^");
+console.log(builder.getValue()); // "^.^"
+builder.padBoth("=");
+console.log(builder.getValue()); // "=^.^="
+
+
+
+
+// class Storage {
+//   constructor(items) {     
+//     this.items = items
+
+//   }
+ 
+//   getItems(){
+//   return this.items
+//   }
+
+//   addItem(newItem) {
+//     this.items.push(newItem);   
+//   }
+
+//   removeItem(itemToRemove) {
+//     const itemToRemoveIndex = this.items.indexOf(itemToRemove);
+//     this.items.splice(itemToRemoveIndex, 1);
+
+
+   
+//   }
+
+// };
+
+
+
+
+// // Change code above this line
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
 
 
 
