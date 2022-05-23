@@ -1,23 +1,99 @@
-const User = function ({ name, email } = {}) {
-  
-  this.name = name;
-  this.email = email;
+
+class Storage {
+  constructor(items) {     
+    this.items = items
+
+  }
+ 
+  getItems(){
+  return this.items
+  }
+
+  addItem(newItem) {
+    this.items.push(newItem);   
+  }
+
+  removeItem(itemToRemove) {
+    const itemToRemoveIndex = this.items.indexOf(itemToRemove);
+    this.items.splice(itemToRemoveIndex, 1);
 
 
+   
+  }
 
-}
-
-const mango = new User({name: "Mango", email: "email@mail.com"});
-
-console.log(mango);
-
-User.prototype.changeName = function (newName) {
-  this.name = newName
 };
 
-mango.changeName("Kiwi");
 
-console.log(mango)
+
+
+// Change code above this line
+const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+console.log(storage);
+console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+storage.addItem("Droid");
+console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+storage.removeItem("Prolonger");
+console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
+
+
+
+
+
+// const customer = {
+//   username: "Mango",
+//   balance: 24000,
+//   discount: 0.1,
+//   orders: ["Burger", "Pizza", "Salad"],
+//   // Change code below this line
+//   getBalance() {
+//     return this.balance;
+//   },
+//   getDiscount() {
+//     return this.discount;
+//   },
+//   setDiscount(value) {
+//     this.discount = value;
+//   },
+//   getOrders() {
+//     return this.orders;
+//   },
+//   addOrder(cost, order) {
+//     this.balance -= cost - cost * this.discount;
+//     this.orders.push(order);
+//   },
+//   // Change code above this line
+// };
+
+// customer.setDiscount(0.15);
+// console.log(customer.getDiscount()); // 0.15
+// customer.addOrder(5000, "Steak");
+// console.log(customer.getBalance()); // 19750
+// console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]
+
+
+
+// const User = function ({ name, email } = {}) {
+  
+//   this.name = name;
+//   this.email = email;
+
+
+
+// }
+
+// const mango = new User({name: "Mango", email: "email@mail.com"});
+
+// console.log(mango);
+
+// User.prototype.changeName = function (newName) {
+//   this.name = newName
+// };
+
+// mango.changeName("Kiwi");
+
+// console.log(mango);
+
 
 
 
