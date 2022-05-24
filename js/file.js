@@ -1,15 +1,408 @@
+function getExtremeElements(array) {
+  // Change code below this line
+ 
+  return [array[0], array[array.lenght-1]]
+
+  // Change code above this line
+}
 
 
 
-// Change code above this line
-const builder = new StringBuilder(".");
-console.log(builder.getValue()); // "."
-builder.padStart("^");
-console.log(builder.getValue()); // "^."
-builder.padEnd("^");
-console.log(builder.getValue()); // "^.^"
-builder.padBoth("=");
-console.log(builder.getValue()); // "=^.^="
+// function checkForSpam(message) {
+//   let result;
+//   // Change code below this line
+  
+ 
+//   result = message.toLowerCase().includes("spam")|| message.toLowerCase().includes("sale")
+
+  
+
+//   // Change code above this line
+//   return result;
+// };
+
+// console.log(checkForSpam("Get best sale offers now!"))
+
+
+
+
+// function checkForSpam(message) {
+//   let result;
+//   // Change code below this line
+    
+//   result = message.toLowerCase().includes("spam" && "sale");
+
+
+//   // Change code above this line
+//   return result;
+// }
+// console.log(checkForSpam('Trust me, this is not a spam message'))
+
+
+// const lalala = 'Trust me, this is not a spam message';
+
+// console.log(lalala.toLowerCase())
+// function checkForName(fullName, name) {
+//   // const fulllName = fullName.toLowercase;
+
+//  const result = fullName.includes(name); // Change this line
+//   return result;
+// }
+
+// // console.log(fulllName);
+
+// console.log(checkForName("Egor Kolbasov", "Egor"))
+
+
+
+
+// // const { max } = require("lodash");
+
+// // const { max } = require("lodash");
+
+// function formatMessage(message, maxLength) {
+
+//   let result;
+//   // Change code below this line
+
+//   // console.log(message.length);
+//   result = message.length <= maxLength? message: message.slice(0, maxLength) + "...";
+
+
+
+//   return result;
+// };
+
+// console.log(formatMessage("Curabitur ligula sapien", 16))
+
+
+
+
+
+
+// function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+//   let message;
+//   // Change code below this line
+
+//   const totalPrice = pricePerDroid * orderedQuantity;
+
+//   if (totalPrice < customerCredits){
+//     message = `You ordered ${orderedQuantity} droids, you have ${customerCredits - totalPrice} credits left`
+//   }
+
+//   else {message = "Insufficient funds!"}
+
+//   // Change code above this line
+//   return message;
+// }
+
+// console.log(makeTransaction(1000, 3, 15000));
+// console.log(makeTransaction(500, 10, 5000));
+
+
+
+
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Dragon breath", price: 780 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+//   // Change code below this line
+//   getPotions() {
+//     return this.potions;
+//   },
+
+//   addPotion(newPotion) {
+    
+//     for (const potion of this.potions) {
+//       // console.log(potion)
+//       if (potion.name === newPotion.name) {
+//         return `Error! Potion ${newPotion.name} is already in your inventory!`
+        
+//       }
+     
+//     };
+//  return this.potions.push(newPotion)
+
+//   },
+//   removePotion(potionName) {
+//     const potionIndex = this.potions.indexOf(potionName);
+
+//     if (potionIndex === -1) {
+//       return `Potion ${potionName} is not in inventory!`;
+//     }
+
+//     this.potions.splice(potionIndex, 1);
+//   },
+//   updatePotionName(oldName, newName) {
+//     const potionIndex = this.potions.indexOf(oldName);
+
+//     if (potionIndex === -1) {
+//       return `Potion ${oldName} is not in inventory!`;
+//     }
+
+//     this.potions.splice(potionIndex, 1, newName);
+//   },
+//   // Change code above this line
+// };
+
+// atTheOldToad.addPotion({ name: "Invisibility", price: 620 });
+// console.log(atTheOldToad.potions)
+
+
+// class User {
+//   email;
+
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+// class Admin extends User {
+//   // Change code below this line
+
+//   static AccessLevel = {
+//     BASIC: "basic",
+//     SUPERUSER: "superuser",
+//   };
+
+//   constructor({email, accessLevel}) {
+//     super(email);
+//     this.accessLevel = accessLevel;
+//     this.blacklistedEmails = [];
+//     this.includes;
+//   }
+    
+//     blacklist(email){
+//       this.blacklistedEmails.push(email)
+//   }
+
+//     isBlacklisted(email){
+//       this.includes = this.blacklistedEmails.includes(email)
+//     return this.includes}
+
+//     }
+    
+  
+
+
+
+//   // Change code above this line
+
+
+// const mango = new Admin({
+//   email: "mango@mail.com",
+//   accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
+// console.log(mango);
+// console.log(mango.email); // "mango@mail.com"
+// console.log(mango.accessLevel); // "superuser"
+
+// mango.blacklist("poly@mail.com");
+// console.log(mango.blacklistedEmails); // ["poly@mail.com"]
+// console.log(mango.isBlacklisted("mango@mail.com")); // false
+// console.log(mango.isBlacklisted("poly@mail.com")); // true
+
+
+// const test = ["Jambo"];
+// console.log(test.includes("Jambo"))
+
+// class User {
+//   email;
+
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// };
+
+
+// class Admin extends User {
+//   // Change code below this line
+
+
+//   static AccessLevel = {
+//     BASIC: "basic",
+//     SUPERUSER: "superuser",
+//   };
+
+//   constructor({email, accessLevel}){
+//     super(); 
+   
+    
+
+//   }
+
+//   // Change code above this line
+// }
+
+// const mango = new Admin({
+//   email: "mango@mail.com",
+//   accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
+
+// console.table(mango); // "mango@mail.com"
+// // console.log(mango.accessLevel); // "superuser"
+
+
+
+
+// class Car {
+//   // Change code below this line
+  
+//   static MAX_PRICE = 50000;
+  
+//   #price;
+
+//   constructor({ price }) {
+//     this.#price = price;
+//   }
+
+//   get price() {
+//     return this.#price;
+//   }
+
+//   set price(newPrice) {
+
+    
+//     this.#price = newPrice;
+//   }
+//   // Change code above this line
+// }
+
+// const audi = new Car({ price: 35000 });
+// console.log(audi.price); // 35000
+
+// audi.price = 49000;
+// console.log(audi.price); // 49000
+
+// audi.price = 51000;
+// console.log(audi.price); // 49000
+
+
+// console.log(audi.MAX_PRICE)
+
+
+
+
+
+
+
+
+
+
+// class Car {
+//   // Change code below this line
+//   #brand
+//   constructor({ brand, model, price }) {
+//     this.#brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   };
+
+//   getBrand() {
+//     return this.#brand
+//   }
+
+//   changeBrand(newBrand) {
+//     this.#brand = newBrand;
+//   }
+
+  
+
+//   // Change code above this line
+// };
+
+// const mango = new Car({ brand: "Audi", model: "Q3", price: 36000 })
+// // mango.brand = "BMW";
+// console.log(mango);
+
+
+
+
+
+// class Car {
+//   // Change code below this line
+
+//   constructor({ brand, model, price }) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
+
+//   // Change code above this line
+// }
+
+
+// class StringBuilder {
+//   constructor(value) {
+//     this.value = value;
+//   }
+
+//     getValue(){
+//       return this.value;
+//   };
+  
+//     padStart(str) {
+//       this.value = str + this.value
+//   };
+  
+
+//     padEnd(str) {
+//     return this.value = this.value + str
+    
+//   }
+
+//   padBoth(str) {
+//     return this.value = str + this.value + str
+    
+//   }
+
+//   }
+
+
+
+// // Change code above this line
+// const builder = new StringBuilder(".");
+
+
+
+// console.log(builder.getValue()); // "."
+
+
+
+// builder.padStart("^");
+
+
+
+// console.log(builder.getValue()); // "^."
+
+
+// builder.padEnd("^");
+
+
+// console.log(builder.getValue()); // "^.^"
+
+
+// builder.padBoth("=");
+
+
+// console.log(builder.getValue()); // "=^.^="
 
 
 
