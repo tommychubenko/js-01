@@ -1,12 +1,103 @@
-function getExtremeElements(array) {
+function filterArray(numbers, value) {
   // Change code below this line
+  const filteredNumbers = numbers.filter( number => number > value);
  
-  return [array[0], array[array.lenght-1]]
 
+  return filteredNumbers;
   // Change code above this line
 }
 
+console.log(filterArray([1, 2, 3, 4, 5], 3))
 
+
+function filterArray(numbers, value) {
+  // Change code below this line
+  const filteredNumbers = [];
+
+    for(const number of numbers){
+      if(number > value){
+        filteredNumbers.push(number)
+      }
+    }
+
+  return filteredNumbers;
+  // Change code above this line
+}
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3))
+
+
+
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+//   // console.log([...array1, ...array2]);
+//   // const totalArray = [...array1, ...array2];
+//   // console.log(totalArray);
+//   // const uniqArray = [...new Set(totalArray)];
+//   const uniqArray = [];
+//   // console.log(uniqArray)
+  
+//   for (const array of array1) {
+//     console.log(array);
+//     if (array2.includes(array)) {
+//       uniqArray.push(array)
+//     };
+//     console.log(uniqArray)
+//   }
+  
+
+// return uniqArray
+
+//  // Change code above this line
+// };
+
+// getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27])
+
+
+// function findLongestWord(string) {
+//   // Change code below this line
+//   const words = string.split(" ");
+//   let longestWord = "";
+//   console.log(words);
+  
+//   for (let i = 0; i < words.length; i += 1)  {
+
+   
+    
+//     if (words[i].length > longestWord.length) {
+//       longestWord = words[i];
+//     }
+          
+//     }
+
+// return longestWord
+//   // Change code above this line
+// };
+
+
+// findLongestWord("The quick brown fox jumped over the lazy dog")
+
+// function checkForSpam(message) {
+//   let result;
+//   // Change code below this line
+//  result = message.toLowerCase().includes("spam")|| message.toLowerCase().includes("sale")
+//   // Change code above this line
+//   return result;
+// }
+
+
+
+// function getExtremeElements(array) {
+//   // Change code below this line
+ 
+//   console.log(array.length - 1);
+//   return [array[0], array[array.length - 1]];
+
+  
+
+//   // Change code above this line
+// }
+// console.log(getExtremeElements([1, 2, 3, 4, 5]))
 
 // function checkForSpam(message) {
 //   let result;
